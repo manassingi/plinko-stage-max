@@ -71,7 +71,7 @@ function draw() {
   Engine.update(engine);
   ground.display();
   
-  if ( gameState =="end") {
+  if ( gameState =="end" ) {
     
     textSize(100);
     text("GameOver", 150, 250);
@@ -79,7 +79,7 @@ function draw() {
   }
 
   
-
+ 
   
 
   for (var i = 0; i < plinkos.length; i++) {
@@ -139,3 +139,12 @@ function mouseReleased()
   
 }
  }
+function keyPreesed(){
+if(keyCode===32 && gameState==="end"){
+
+  gameState="start";
+  score=0
+}
+
+
+}
